@@ -1,3 +1,103 @@
+@import "css/reset.css";
+
+body {
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  color: greenyellow;
+  font-size: large;
+}
+
+header div:last-child {
+  text-align: end;
+}
+
+#clock {
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  -webkit-text-stroke: 2px goldenrod;
+}
+
+.login-form div {
+  margin-top: 20px;
+}
+
+#name {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.login-form input:last-child {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: goldenrod;
+  color: white;
+}
+
 .hidden {
   display: none;
+}
+
+/* greeting */
+
+.greeting {
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  color: goldenrod;
+}
+
+/* todo-form */
+#todo-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#todo-form input {
+  height: 40px;
+  width: 800px;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 400px;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  padding: 8px 5px;
+  margin: 3px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#todo-list span {
+  margin-left: 8px;
+  color: white;
+  font-size: 18px;
 }
